@@ -10,21 +10,29 @@ const BookingModal = ({ setModalOpen }) => {
             <label className="block text-gray-700">Full Name</label>
             <input
               type="text"
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-pink-600"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-pink-600" nam='name'
               placeholder="Enter your name"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">Phone</label>
+            <input
+              type="number"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-pink-600" name="phone"
+              placeholder="Enter your phone number"
             />
           </div>
           <div className="mb-4">
             <label className="block text-gray-700">Email</label>
             <input
               type="email"
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-pink-600"
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-pink-600" name="email"
               placeholder="Enter your email"
             />
           </div>
           <div className="mb-4">
             <label className="block text-gray-700">Preferred Service</label>
-            <select className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-pink-600">
+            <select className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-pink-600" name="service">
               <option>Venue Selection</option>
               <option>Catering Services</option>
               <option>Photography</option>
